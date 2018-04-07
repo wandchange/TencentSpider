@@ -1,0 +1,1329 @@
+2018-04-03 23:46:22 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: TencentSpider)
+2018-04-03 23:46:22 [scrapy.utils.log] INFO: Versions: lxml 4.2.0.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 17.9.0, Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:04:45) [MSC v.1900 32 bit (Intel)], pyOpenSSL 17.5.0 (OpenSSL 1.1.0g  2 Nov 2017), cryptography 2.2.1, Platform Windows-8.1-6.3.9600-SP0
+2018-04-03 23:46:22 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'TencentSpider', 'LOG_FILE': 'tencentlog.log', 'NEWSPIDER_MODULE': 'TencentSpider.spiders', 'SPIDER_MODULES': ['TencentSpider.spiders']}
+2018-04-03 23:46:22 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-04-03 23:46:23 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-04-03 23:46:23 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-04-03 23:46:23 [scrapy.middleware] INFO: Enabled item pipelines:
+['TencentSpider.pipelines.TencentPipeline']
+2018-04-03 23:46:23 [scrapy.core.engine] INFO: Spider opened
+2018-04-03 23:46:23 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-04-03 23:46:23 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-04-03 23:46:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?start=0#a> (referer: None)
+2018-04-03 23:47:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=10#a> (referer: https://hr.tencent.com/position.php?start=0)
+2018-04-03 23:47:44 [scrapy.extensions.logstats] INFO: Crawled 2 pages (at 2 pages/min), scraped 0 items (at 0 items/min)
+2018-04-03 23:47:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=10>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=38785&keywords=&tid=0&lid=0',
+ 'positionName': '15851-游戏人工智能研究员（深圳）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:47:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=10>
+{'peopleNum': '3',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=38782&keywords=&tid=0&lid=0',
+ 'positionName': '15851-游戏测试工程师（深圳）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:47:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=10>
+{'peopleNum': '2',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=38788&keywords=&tid=0&lid=0',
+ 'positionName': 'MIG03-Web前端开发（深圳）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:47:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=10>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=38787&keywords=&tid=0&lid=0',
+ 'positionName': 'CB-健康顾问（北京）',
+ 'positionType': '职能类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '北京'}
+2018-04-03 23:47:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=10>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=38790&keywords=&tid=0&lid=0',
+ 'positionName': 'HY5-互娱欧美商务经理（欧美重点客户）',
+ 'positionType': '市场类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:47:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=10>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=38779&keywords=&tid=0&lid=0',
+ 'positionName': '15851-游戏后台开发工程师（深圳）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:47:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=10>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=38784&keywords=&tid=0&lid=0',
+ 'positionName': '15851-游戏音频师（深圳）',
+ 'positionType': '产品/项目类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:47:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=10>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=38778&keywords=&tid=0&lid=0',
+ 'positionName': '16811-授权业务平面设计师',
+ 'positionType': '设计类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '北京'}
+2018-04-03 23:47:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=10>
+{'peopleNum': '2',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=38781&keywords=&tid=0&lid=0',
+ 'positionName': '15851-游戏图形渲染开发工程师（深圳）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:47:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=10>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=37160&keywords=&tid=0&lid=0',
+ 'positionName': '15851-绝地求生：刺激战场-FPS游戏系统策划(深圳)',
+ 'positionType': '产品/项目类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:47:45 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://hr.tencent.com/position.php?&start=20#a> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2018-04-03 23:47:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=70#a> (referer: https://hr.tencent.com/position.php?start=0)
+2018-04-03 23:47:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=30#a> (referer: https://hr.tencent.com/position.php?start=0)
+2018-04-03 23:47:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=50#a> (referer: https://hr.tencent.com/position.php?start=0)
+2018-04-03 23:47:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=60#a> (referer: https://hr.tencent.com/position.php?start=0)
+2018-04-03 23:47:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=70>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=36649&keywords=&tid=0&lid=0',
+ 'positionName': '22968-华东汽车行业销售经理（上海）',
+ 'positionType': '市场类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '上海'}
+2018-04-03 23:47:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=70>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35691&keywords=&tid=0&lid=0',
+ 'positionName': '22968-广告国际日化服饰用品销售经理（上海）',
+ 'positionType': '市场类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '上海'}
+2018-04-03 23:47:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=70>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=34850&keywords=&tid=0&lid=0',
+ 'positionName': '20016-移动游戏高级测试工程师',
+ 'positionType': '技术类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:47:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=70>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=32733&keywords=&tid=0&lid=0',
+ 'positionName': '15570-端游引擎开发工程师（深圳）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:47:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=70>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=34092&keywords=&tid=0&lid=0',
+ 'positionName': '15571-高级技术美术（深圳）',
+ 'positionType': '设计类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:47:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=70>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=34135&keywords=&tid=0&lid=0',
+ 'positionName': 'SNG02-腾讯云行业高级运营经理（昆明）',
+ 'positionType': '产品/项目类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '昆明'}
+2018-04-03 23:47:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=70>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=34134&keywords=&tid=0&lid=0',
+ 'positionName': 'SNG02-腾讯云项目经理（昆明）',
+ 'positionType': '产品/项目类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '昆明'}
+2018-04-03 23:47:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=40#a> (referer: https://hr.tencent.com/position.php?start=0)
+2018-04-03 23:47:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=70>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35597&keywords=&tid=0&lid=0',
+ 'positionName': '25663-营销云产品总监（深圳）',
+ 'positionType': '产品/项目类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:47:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=70>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=34136&keywords=&tid=0&lid=0',
+ 'positionName': 'SNG02-腾讯云行业方案架构师（昆明）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '昆明'}
+2018-04-03 23:47:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=70>
+{'peopleNum': '2',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=33198&keywords=&tid=0&lid=0',
+ 'positionName': 'SNG02-腾讯云音视频研发高级工程师（深圳）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:48:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=30>
+{'peopleNum': '8',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=38192&keywords=&tid=0&lid=0',
+ 'positionName': '26381-合资公司腾云产品经理（昆明）',
+ 'positionType': '产品/项目类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '昆明'}
+2018-04-03 23:48:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=30>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=38196&keywords=&tid=0&lid=0',
+ 'positionName': '26381-合资公司腾云架构师（昆明）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '昆明'}
+2018-04-03 23:48:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=30>
+{'peopleNum': '4',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=38211&keywords=&tid=0&lid=0',
+ 'positionName': '26381-大数据研发工程师',
+ 'positionType': '技术类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '昆明'}
+2018-04-03 23:48:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=30>
+{'peopleNum': '6',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=38205&keywords=&tid=0&lid=0',
+ 'positionName': '26381-合资公司腾云IOS工程师（昆明）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '昆明'}
+2018-04-03 23:48:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=30>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=38199&keywords=&tid=0&lid=0',
+ 'positionName': '26381-合资公司腾云市场总监（昆明）（合资公司编制-云南）',
+ 'positionType': '产品/项目类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '昆明'}
+2018-04-03 23:48:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=30>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=38190&keywords=&tid=0&lid=0',
+ 'positionName': '26381-产品总监（腾云公司编制-昆明）',
+ 'positionType': '产品/项目类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '昆明'}
+2018-04-03 23:48:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=30>
+{'peopleNum': '10',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=38197&keywords=&tid=0&lid=0',
+ 'positionName': '26381-合资公司腾云后台工程师（昆明）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '昆明'}
+2018-04-03 23:48:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=30>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=38200&keywords=&tid=0&lid=0',
+ 'positionName': '26381-平台运营总监（合资公司编制-云南）',
+ 'positionType': '产品/项目类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '昆明'}
+2018-04-03 23:48:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=30>
+{'peopleNum': '5',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=38194&keywords=&tid=0&lid=0',
+ 'positionName': '26381-合资公司腾云项目经理（昆明）',
+ 'positionType': '产品/项目类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '昆明'}
+2018-04-03 23:48:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=30>
+{'peopleNum': '5',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=38189&keywords=&tid=0&lid=0',
+ 'positionName': '26381-商务拓展经理（腾云编制-云南）',
+ 'positionType': '市场类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '昆明'}
+2018-04-03 23:48:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=3930#a> (referer: https://hr.tencent.com/position.php?start=0)
+2018-04-03 23:48:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=0#a> (referer: https://hr.tencent.com/position.php?&start=10)
+2018-04-03 23:48:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=20#a> (referer: https://hr.tencent.com/position.php?start=0)
+2018-04-03 23:48:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=50>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=37969&keywords=&tid=0&lid=0',
+ 'positionName': 'WXG08-211 微信推荐高级产品经理 （策略方向）（广州）',
+ 'positionType': '产品/项目类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '广州'}
+2018-04-03 23:48:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=50>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=38804&keywords=&tid=0&lid=0',
+ 'positionName': '22968-本土日化服饰用品销售',
+ 'positionType': '市场类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:48:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=50>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=38776&keywords=&tid=0&lid=0',
+ 'positionName': 'OMG064-广告投放引擎后台开发工程师（上海）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '上海'}
+2018-04-03 23:48:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=50>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=38802&keywords=&tid=0&lid=0',
+ 'positionName': 'WXG04-212 微信游戏社交产品经理（深圳）',
+ 'positionType': '产品/项目类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:48:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=50>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=38797&keywords=&tid=0&lid=0',
+ 'positionName': '22967-腾讯广告大客户渠道销售经理（上海）',
+ 'positionType': '市场类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '广州'}
+2018-04-03 23:48:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=50>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=26205&keywords=&tid=0&lid=0',
+ 'positionName': 'OMG236-计算机视觉算法研发工程师（深圳）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:48:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=50>
+{'peopleNum': '2',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=25689&keywords=&tid=0&lid=0',
+ 'positionName': 'OMG236-腾讯视频搜索后台研发工程师（深圳）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:48:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=50>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=38796&keywords=&tid=0&lid=0',
+ 'positionName': 'MIG03-UI视觉设计师（APP）',
+ 'positionType': '设计类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:48:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=50>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=38795&keywords=&tid=0&lid=0',
+ 'positionName': 'MIG09-QQ浏览器前端开发工程师',
+ 'positionType': '技术类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '北京'}
+2018-04-03 23:48:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=50>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=33231&keywords=&tid=0&lid=0',
+ 'positionName': '21229-回合手游资深运营策划（上海）',
+ 'positionType': '产品/项目类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '上海'}
+2018-04-03 23:48:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=60>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=33202&keywords=&tid=0&lid=0',
+ 'positionName': '15573-手游客户端开发工程师（上海）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '上海'}
+2018-04-03 23:48:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=60>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=34880&keywords=&tid=0&lid=0',
+ 'positionName': '21062-游戏引擎渲染工程师（上海）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '上海'}
+2018-04-03 23:48:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=60>
+{'peopleNum': '2',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=34877&keywords=&tid=0&lid=0',
+ 'positionName': '21062-游戏资深引擎开发工程师（上海）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '上海'}
+2018-04-03 23:48:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=60>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=36718&keywords=&tid=0&lid=0',
+ 'positionName': 'SNG01-手Q-iOS高级开发工程师（深圳）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:48:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=60>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=32760&keywords=&tid=0&lid=0',
+ 'positionName': '20764-政府及公共事务经理',
+ 'positionType': '职能类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '北京'}
+2018-04-03 23:48:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=60>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=38789&keywords=&tid=0&lid=0',
+ 'positionName': 'MIG04-数据分析师（深圳）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:48:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=60>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35629&keywords=&tid=0&lid=0',
+ 'positionName': '17759-腾讯视频PC端产品合作经理',
+ 'positionType': '市场类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '北京'}
+2018-04-03 23:48:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=60>
+{'peopleNum': '2',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=34803&keywords=&tid=0&lid=0',
+ 'positionName': '22850-腾讯视频VIP渠道BD经理',
+ 'positionType': '市场类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '北京'}
+2018-04-03 23:48:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=60>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=34013&keywords=&tid=0&lid=0',
+ 'positionName': '22850-用户精细化运营经理',
+ 'positionType': '市场类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '北京'}
+2018-04-03 23:48:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=60>
+{'peopleNum': '2',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=32697&keywords=&tid=0&lid=0',
+ 'positionName': '22968-华南汽车行业销售（广州）',
+ 'positionType': '市场类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '广州'}
+2018-04-03 23:48:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=40>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=38188&keywords=&tid=0&lid=0',
+ 'positionName': '26381-商务拓展总监（腾云编制-云南）',
+ 'positionType': '市场类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '昆明'}
+2018-04-03 23:48:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=40>
+{'peopleNum': '4',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=38204&keywords=&tid=0&lid=0',
+ 'positionName': '26381-大数据后台开发工程师（合资公司编制-云南）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '昆明'}
+2018-04-03 23:48:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=40>
+{'peopleNum': '2',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=38209&keywords=&tid=0&lid=0',
+ 'positionName': '26381-合资公司腾云AE工程师（昆明）',
+ 'positionType': '市场类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '昆明'}
+2018-04-03 23:48:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=40>
+{'peopleNum': '2',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=38208&keywords=&tid=0&lid=0',
+ 'positionName': '26381-合资公司腾云品牌推广经理（昆明）',
+ 'positionType': '市场类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '昆明'}
+2018-04-03 23:48:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=40>
+{'peopleNum': '3',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=38201&keywords=&tid=0&lid=0',
+ 'positionName': '26381-机器学习工程师（合资公司编制-云南）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '昆明'}
+2018-04-03 23:48:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=40>
+{'peopleNum': '2',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=38206&keywords=&tid=0&lid=0',
+ 'positionName': '26381-OTA运营经理（合资公司编制-云南）',
+ 'positionType': '产品/项目类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '昆明'}
+2018-04-03 23:48:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=40>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=38210&keywords=&tid=0&lid=0',
+ 'positionName': '26381-交互设计（合资公司编制-云南）',
+ 'positionType': '设计类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '昆明'}
+2018-04-03 23:48:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=40>
+{'peopleNum': '2',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35671&keywords=&tid=0&lid=0',
+ 'positionName': '25663-腾讯专有云高级产品运营经理（深圳）',
+ 'positionType': '产品/项目类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:48:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=40>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=30188&keywords=&tid=0&lid=0',
+ 'positionName': 'WXG02-121 微信视频内核高级工程师（深圳/北京/广州）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:48:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=40>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=36110&keywords=&tid=0&lid=0',
+ 'positionName': 'WXG08-211 微信视频推荐产品经理（策略方向）（广州）',
+ 'positionType': '产品/项目类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '广州'}
+2018-04-03 23:48:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3930>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35636&keywords=&tid=0&lid=0',
+ 'positionName': '20503-深度学习平台优化高级工程师(上海）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-01-04',
+ 'workLocation': '上海'}
+2018-04-03 23:48:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3930>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35626&keywords=&tid=0&lid=0',
+ 'positionName': 'ZL-商业分析总监（深圳）',
+ 'positionType': '市场类',
+ 'publishTime': '2018-01-04',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=0>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=33469&keywords=&tid=0&lid=0',
+ 'positionName': 'MIG07-游戏工具产品策划经理（深圳）',
+ 'positionType': '产品/项目类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=80#a> (referer: https://hr.tencent.com/position.php?&start=70)
+2018-04-03 23:49:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=90#a> (referer: https://hr.tencent.com/position.php?&start=70)
+2018-04-03 23:49:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=100#a> (referer: https://hr.tencent.com/position.php?&start=70)
+2018-04-03 23:49:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=20>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=34872&keywords=&tid=0&lid=0',
+ 'positionName': '16078-医疗行业商务拓展经理（北京）',
+ 'positionType': '市场类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '北京'}
+2018-04-03 23:49:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=20>
+{'peopleNum': '10',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=36945&keywords=&tid=0&lid=0',
+ 'positionName': 'SNG08-微视Android开发工程师(深圳)',
+ 'positionType': '技术类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=20>
+{'peopleNum': '10',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=36944&keywords=&tid=0&lid=0',
+ 'positionName': 'SNG08-微视iOS开发工程师(深圳)',
+ 'positionType': '技术类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:25 [scrapy.extensions.logstats] INFO: Crawled 13 pages (at 11 pages/min), scraped 66 items (at 66 items/min)
+2018-04-03 23:49:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=0>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=37586&keywords=&tid=0&lid=0',
+ 'positionName': '22834-腾讯音乐高级商业分析经理(深圳)',
+ 'positionType': '市场类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=0>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35163&keywords=&tid=0&lid=0',
+ 'positionName': 'MIG03-AI评价优化高级工程师（深圳）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=0>
+{'peopleNum': '3',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=24411&keywords=&tid=0&lid=0',
+ 'positionName': '18428-财付通清算业务测试工程师（深圳）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=0>
+{'peopleNum': '10',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=36827&keywords=&tid=0&lid=0',
+ 'positionName': 'SNG08-微视Linux C++后台开发(深圳)',
+ 'positionType': '技术类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=0>
+{'peopleNum': '5',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=36828&keywords=&tid=0&lid=0',
+ 'positionName': 'SNG08-微视web前端工程师(深圳)',
+ 'positionType': '技术类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=20>
+{'peopleNum': '4',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=38203&keywords=&tid=0&lid=0',
+ 'positionName': '26381-前端工程师（合资公司编制-云南）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '昆明'}
+2018-04-03 23:49:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=20>
+{'peopleNum': '6',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=38202&keywords=&tid=0&lid=0',
+ 'positionName': '26381-安卓开发工程师（合资公司编制-云南）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '昆明'}
+2018-04-03 23:49:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=20>
+{'peopleNum': '5',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=38198&keywords=&tid=0&lid=0',
+ 'positionName': '26381-电商运营经理（合资公司编制-云南）',
+ 'positionType': '产品/项目类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '昆明'}
+2018-04-03 23:49:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=20>
+{'peopleNum': '3',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=38207&keywords=&tid=0&lid=0',
+ 'positionName': '26381-合资公司腾云市场营销策划经理（昆明）',
+ 'positionType': '市场类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '昆明'}
+2018-04-03 23:49:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=20>
+{'peopleNum': '4',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=16860&keywords=&tid=0&lid=0',
+ 'positionName': 'SNG01-QQ高级产品经理（深圳）',
+ 'positionType': '产品/项目类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=20>
+{'peopleNum': '4',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=38195&keywords=&tid=0&lid=0',
+ 'positionName': '26381-合资公司腾云售前工程师（昆明）',
+ 'positionType': '市场类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '昆明'}
+2018-04-03 23:49:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=20>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=38191&keywords=&tid=0&lid=0',
+ 'positionName': '26381-合资公司腾云技术总监（昆明）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '昆明'}
+2018-04-03 23:49:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=0>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=38780&keywords=&tid=0&lid=0',
+ 'positionName': '15851-游戏图形渲染开发工程师（深圳）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=0>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=38786&keywords=&tid=0&lid=0',
+ 'positionName': 'IEG-HRBP（深圳）',
+ 'positionType': '职能类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=0>
+{'peopleNum': '2',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=38783&keywords=&tid=0&lid=0',
+ 'positionName': '15851-FPS游戏专项技术测试（深圳）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=0>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=38777&keywords=&tid=0&lid=0',
+ 'positionName': '18432-金融理财产品高级运营经理',
+ 'positionType': '产品/项目类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=80>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=34083&keywords=&tid=0&lid=0',
+ 'positionName': '25663-腾讯云官网产品运营经理（深圳）',
+ 'positionType': '产品/项目类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=80>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=34862&keywords=&tid=0&lid=0',
+ 'positionName': 'WXG06-321 微信支付商务拓展经理（深圳）',
+ 'positionType': '市场类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=80>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=34876&keywords=&tid=0&lid=0',
+ 'positionName': 'WXG06-231 微信支付高级业务架构师（深圳）',
+ 'positionType': '产品/项目类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=80>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=31387&keywords=&tid=0&lid=0',
+ 'positionName': 'SA-腾讯社交广告商业化产品经理（北京）',
+ 'positionType': '产品/项目类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '北京'}
+2018-04-03 23:49:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=80>
+{'peopleNum': '3',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=36675&keywords=&tid=0&lid=0',
+ 'positionName': 'XN-C++后台开发工程师（深圳）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=80>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35725&keywords=&tid=0&lid=0',
+ 'positionName': 'MIG13-大数据分析师（深圳）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=80>
+{'peopleNum': '2',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=34126&keywords=&tid=0&lid=0',
+ 'positionName': 'S2-风险管理及内部控制分析师(IT或数据分析方向)(深圳)',
+ 'positionType': '职能类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=80>
+{'peopleNum': '2',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=26491&keywords=&tid=0&lid=0',
+ 'positionName': 'SNG08-儿童英语后台开发工程师（深圳）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=80>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=33988&keywords=&tid=0&lid=0',
+ 'positionName': 'SNG07-质量管理工程师（深圳）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=80>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=32720&keywords=&tid=0&lid=0',
+ 'positionName': 'MIG10-微回收渠道产品运营经理（深圳）',
+ 'positionType': '产品/项目类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=90>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=31965&keywords=&tid=0&lid=0',
+ 'positionName': 'WXG06-211 微信支付服务商运营经理（深圳）',
+ 'positionType': '产品/项目类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=90>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=30176&keywords=&tid=0&lid=0',
+ 'positionName': '22989-腾讯云网络资源管理工程师（深圳）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=100>
+{'peopleNum': '2',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=31408&keywords=&tid=0&lid=0',
+ 'positionName': '22989-腾讯云web前端开发工程师（成都/深圳）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '成都'}
+2018-04-03 23:49:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=100>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=31990&keywords=&tid=0&lid=0',
+ 'positionName': '22989-腾讯云计费平台高级工程师（深圳）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=3890#a> (referer: https://hr.tencent.com/position.php?&start=3930)
+2018-04-03 23:49:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=3860#a> (referer: https://hr.tencent.com/position.php?&start=3930)
+2018-04-03 23:49:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=3880#a> (referer: https://hr.tencent.com/position.php?&start=3930)
+2018-04-03 23:49:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=3910#a> (referer: https://hr.tencent.com/position.php?&start=3930)
+2018-04-03 23:49:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=3920#a> (referer: https://hr.tencent.com/position.php?&start=3930)
+2018-04-03 23:49:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=3900#a> (referer: https://hr.tencent.com/position.php?&start=3930)
+2018-04-03 23:49:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=3870#a> (referer: https://hr.tencent.com/position.php?&start=3930)
+2018-04-03 23:49:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=90>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=34806&keywords=&tid=0&lid=0',
+ 'positionName': '17467-SNG市场部-娱乐营销拓展（北京）',
+ 'positionType': '市场类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '北京'}
+2018-04-03 23:49:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=90>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35613&keywords=&tid=0&lid=0',
+ 'positionName': '17467-SNG市场部—NOW直播高级品牌经理（深圳）',
+ 'positionType': '市场类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=90>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=32667&keywords=&tid=0&lid=0',
+ 'positionName': '20503-优图服务运营开发工程师(上海）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '上海'}
+2018-04-03 23:49:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=90>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=34142&keywords=&tid=0&lid=0',
+ 'positionName': '15581-棋牌游戏研发策划(深圳)',
+ 'positionType': '产品/项目类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=90>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=33222&keywords=&tid=0&lid=0',
+ 'positionName': '15581-欢乐游戏新项目Unity开发工程师（深圳）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=90>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=26462&keywords=&tid=0&lid=0',
+ 'positionName': '21309-K12在线教育教研总监（深圳）',
+ 'positionType': '产品/项目类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=90>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=30244&keywords=&tid=0&lid=0',
+ 'positionName': '22989-腾讯云运营系统开发工程师（深圳）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=90>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=30255&keywords=&tid=0&lid=0',
+ 'positionName': '22989-COS运维工程师（深圳）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=100>
+{'peopleNum': '2',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35593&keywords=&tid=0&lid=0',
+ 'positionName': '22989-腾讯云分布式块存储底层开发工程师（深圳）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=100>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35596&keywords=&tid=0&lid=0',
+ 'positionName': '22989-腾讯云运营产品中心高级运营经理（深圳）',
+ 'positionType': '产品/项目类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=100>
+{'peopleNum': '2',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35622&keywords=&tid=0&lid=0',
+ 'positionName': '22989-腾讯云大客户售后高级顾问（CDN/视频方向）（深圳/北京/上海/成都）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=100>
+{'peopleNum': '2',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35679&keywords=&tid=0&lid=0',
+ 'positionName': '22989-腾讯云高级产品设计师（深圳）',
+ 'positionType': '产品/项目类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=100>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=36681&keywords=&tid=0&lid=0',
+ 'positionName': '22989-腾讯企业产品运营数据分析岗位（深圳）',
+ 'positionType': '产品/项目类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=100>
+{'peopleNum': '3',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=34812&keywords=&tid=0&lid=0',
+ 'positionName': '22989-腾讯云计算产品前端开发工程师（深圳）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=100>
+{'peopleNum': '3',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=34817&keywords=&tid=0&lid=0',
+ 'positionName': '22989-腾讯云计算产品全栈工程师（深圳）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=100>
+{'peopleNum': '2',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=34823&keywords=&tid=0&lid=0',
+ 'positionName': '22989-【HOT】腾讯云流量运营-腾讯系广告推广（深圳）',
+ 'positionType': '产品/项目类',
+ 'publishTime': '2018-04-02',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=110#a> (referer: https://hr.tencent.com/position.php?&start=80)
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3890>
+{'peopleNum': '3',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35892&keywords=&tid=0&lid=0',
+ 'positionName': 'TEG09-视频编转码高级工程师（深圳/北京）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-01-11',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3890>
+{'peopleNum': '2',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35882&keywords=&tid=0&lid=0',
+ 'positionName': '22989-腾讯云运营开发工程师（北京）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-01-10',
+ 'workLocation': '北京'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3890>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35877&keywords=&tid=0&lid=0',
+ 'positionName': '15569-QQ飞车手游高级美宣原画',
+ 'positionType': '设计类',
+ 'publishTime': '2018-01-10',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3890>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35876&keywords=&tid=0&lid=0',
+ 'positionName': '15569-QQ飞车高级场景原画设计师',
+ 'positionType': '设计类',
+ 'publishTime': '2018-01-10',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3890>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35874&keywords=&tid=0&lid=0',
+ 'positionName': '15569-QQ飞车手游高级3D角色设计师',
+ 'positionType': '设计类',
+ 'publishTime': '2018-01-10',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3860>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=36013&keywords=&tid=0&lid=0',
+ 'positionName': 'SNG07-腾讯云测试开发高级工程师（深圳）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-01-15',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3860>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=36007&keywords=&tid=0&lid=0',
+ 'positionName': '18302-动作类资深3D关卡设计师（深圳）',
+ 'positionType': '设计类',
+ 'publishTime': '2018-01-15',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3860>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=36002&keywords=&tid=0&lid=0',
+ 'positionName': 'TEG02-资深网络设计工程师（深圳）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-01-15',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3860>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=36001&keywords=&tid=0&lid=0',
+ 'positionName': 'TEG02-网络首席架构师（美国）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-01-15',
+ 'workLocation': '美国'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3860>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35998&keywords=&tid=0&lid=0',
+ 'positionName': 'SA-腾讯社交广告商业运营经理（深圳）',
+ 'positionType': '产品/项目类',
+ 'publishTime': '2018-01-15',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3860>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35996&keywords=&tid=0&lid=0',
+ 'positionName': 'SNG03-SNG互动视频B侧高级产品运营经理（深圳）',
+ 'positionType': '产品/项目类',
+ 'publishTime': '2018-01-15',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3860>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35995&keywords=&tid=0&lid=0',
+ 'positionName': '20503-后台研发工程师（合肥）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-01-15',
+ 'workLocation': '合肥'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3860>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35989&keywords=&tid=0&lid=0',
+ 'positionName': 'CS-运营合作',
+ 'positionType': '产品/项目类',
+ 'publishTime': '2018-01-15',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3880>
+{'peopleNum': '2',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35941&keywords=&tid=0&lid=0',
+ 'positionName': 'SNG04-QQ看点内容AI算法工程师（上海）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-01-11',
+ 'workLocation': '上海'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3880>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35939&keywords=&tid=0&lid=0',
+ 'positionName': 'SNG01-QQ应用后台高级开发工程师（北京）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-01-11',
+ 'workLocation': '北京'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3880>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35935&keywords=&tid=0&lid=0',
+ 'positionName': '21527-腾讯音乐风险管理及内部控制分析师（深圳）',
+ 'positionType': '职能类',
+ 'publishTime': '2018-01-11',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3880>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35933&keywords=&tid=0&lid=0',
+ 'positionName': '21527-腾讯音乐投资者关系高级财务经理（深圳）',
+ 'positionType': '职能类',
+ 'publishTime': '2018-01-11',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3880>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35932&keywords=&tid=0&lid=0',
+ 'positionName': '21527-集团资金管理（深圳）',
+ 'positionType': '职能类',
+ 'publishTime': '2018-01-11',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3880>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35921&keywords=&tid=0&lid=0',
+ 'positionName': 'SNG08-KOL运营高级经理（深圳）',
+ 'positionType': '内容编辑类',
+ 'publishTime': '2018-01-11',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3880>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35920&keywords=&tid=0&lid=0',
+ 'positionName': '21527-腾讯音乐财务管理（深圳）',
+ 'positionType': '职能类',
+ 'publishTime': '2018-01-11',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3880>
+{'peopleNum': '2',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35910&keywords=&tid=0&lid=0',
+ 'positionName': 'TEG17-Principal Researcher（Seattle）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-01-11',
+ 'workLocation': '美国'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3880>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35909&keywords=&tid=0&lid=0',
+ 'positionName': '20016-天美高级测试工程师（深圳）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-01-11',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3910>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35794&keywords=&tid=0&lid=0',
+ 'positionName': '23048-翻译君NLP算法高级工程师(北京)',
+ 'positionType': '技术类',
+ 'publishTime': '2018-01-09',
+ 'workLocation': '北京'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3910>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35818&keywords=&tid=0&lid=0',
+ 'positionName': 'WXG08-121 微信搜索推荐机器学习专家工程师（广州， 北京）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-01-09',
+ 'workLocation': '广州'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3910>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35792&keywords=&tid=0&lid=0',
+ 'positionName': 'MIG06-电子工程师（深圳）',
+ 'positionType': '产品/项目类',
+ 'publishTime': '2018-01-09',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3910>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35780&keywords=&tid=0&lid=0',
+ 'positionName': '22989-腾讯云互联网行业高级运营经理（北京）',
+ 'positionType': '产品/项目类',
+ 'publishTime': '2018-01-08',
+ 'workLocation': '北京'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3910>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35781&keywords=&tid=0&lid=0',
+ 'positionName': '22989-腾讯云互联网渠道高级运营经理（北京）',
+ 'positionType': '产品/项目类',
+ 'publishTime': '2018-01-08',
+ 'workLocation': '北京'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3910>
+{'peopleNum': '2',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35778&keywords=&tid=0&lid=0',
+ 'positionName': '22989-腾讯云交付项目经理（深圳）',
+ 'positionType': '产品/项目类',
+ 'publishTime': '2018-01-08',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3910>
+{'peopleNum': '2',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35777&keywords=&tid=0&lid=0',
+ 'positionName': '22989-腾讯云产品架构师（硬件生态合作伙伴建设方向）（深圳）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-01-08',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3910>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35773&keywords=&tid=0&lid=0',
+ 'positionName': 'SD9-动画特效师',
+ 'positionType': '设计类',
+ 'publishTime': '2018-01-08',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3910>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35771&keywords=&tid=0&lid=0',
+ 'positionName': 'SD9-2D场景设计师',
+ 'positionType': '设计类',
+ 'publishTime': '2018-01-08',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3910>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35772&keywords=&tid=0&lid=0',
+ 'positionName': 'SD9-3D场景设计师',
+ 'positionType': '设计类',
+ 'publishTime': '2018-01-08',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3920>
+{'peopleNum': '2',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35766&keywords=&tid=0&lid=0',
+ 'positionName': '22989-腾讯云异构计算研发工程师（上海）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-01-08',
+ 'workLocation': '上海'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3920>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35765&keywords=&tid=0&lid=0',
+ 'positionName': '22989-腾讯深度定制云中心资深架构师（北京/上海）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-01-08',
+ 'workLocation': '北京'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3920>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35759&keywords=&tid=0&lid=0',
+ 'positionName': 'SNG11-腾讯云数据安全高级产品经理（深圳）',
+ 'positionType': '产品/项目类',
+ 'publishTime': '2018-01-08',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3920>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35756&keywords=&tid=0&lid=0',
+ 'positionName': 'TEG02-QA质量管理工程师（深圳）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-01-08',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3920>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35738&keywords=&tid=0&lid=0',
+ 'positionName': '15612-高级场景原画设计师（深圳）',
+ 'positionType': '设计类',
+ 'publishTime': '2018-01-08',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3920>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35737&keywords=&tid=0&lid=0',
+ 'positionName': '15575-《王者荣耀》资深战斗策划（成都）',
+ 'positionType': '产品/项目类',
+ 'publishTime': '2018-01-08',
+ 'workLocation': '成都'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3920>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35728&keywords=&tid=0&lid=0',
+ 'positionName': '22850-腾讯视频VIP运营商渠道高级BD经理（北京）',
+ 'positionType': '市场类',
+ 'publishTime': '2018-01-08',
+ 'workLocation': '北京'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3920>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35726&keywords=&tid=0&lid=0',
+ 'positionName': 'MIG09-浏览器资讯后台开发高级工程师',
+ 'positionType': '技术类',
+ 'publishTime': '2018-01-08',
+ 'workLocation': '北京'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3920>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35762&keywords=&tid=0&lid=0',
+ 'positionName': '22086-腾讯体育会员运营（北京）',
+ 'positionType': '市场类',
+ 'publishTime': '2018-01-08',
+ 'workLocation': '北京'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3920>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35657&keywords=&tid=0&lid=0',
+ 'positionName': 'TA-职业发展经理（深圳）',
+ 'positionType': '职能类',
+ 'publishTime': '2018-01-05',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3900>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35855&keywords=&tid=0&lid=0',
+ 'positionName': '15569-横版射击高级2D场景原画师（深圳）',
+ 'positionType': '设计类',
+ 'publishTime': '2018-01-10',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3900>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35854&keywords=&tid=0&lid=0',
+ 'positionName': '15569-UnrealEngine4高级引擎工程师',
+ 'positionType': '技术类',
+ 'publishTime': '2018-01-10',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3900>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35852&keywords=&tid=0&lid=0',
+ 'positionName': '15569-Unity3D高级游戏引擎工程师',
+ 'positionType': '技术类',
+ 'publishTime': '2018-01-10',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3900>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35842&keywords=&tid=0&lid=0',
+ 'positionName': '18402-移动游戏本地化商业化活动策划',
+ 'positionType': '产品/项目类',
+ 'publishTime': '2018-01-10',
+ 'workLocation': '上海'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3900>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35843&keywords=&tid=0&lid=0',
+ 'positionName': '18402-【拳皇命运】本地化策划',
+ 'positionType': '产品/项目类',
+ 'publishTime': '2018-01-10',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3900>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35715&keywords=&tid=0&lid=0',
+ 'positionName': 'RP-移动端产品经理（深圳）',
+ 'positionType': '职能类',
+ 'publishTime': '2018-01-10',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3900>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35840&keywords=&tid=0&lid=0',
+ 'positionName': 'SNG04-QQ看点视频处理中心高级后台开发（上海）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-01-09',
+ 'workLocation': '上海'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3900>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35823&keywords=&tid=0&lid=0',
+ 'positionName': '15569-横版射击手游高级项目经理（深圳）',
+ 'positionType': '产品/项目类',
+ 'publishTime': '2018-01-09',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3900>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35820&keywords=&tid=0&lid=0',
+ 'positionName': 'RP-HR业务研发中心总监',
+ 'positionType': '技术类',
+ 'publishTime': '2018-01-09',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3900>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35803&keywords=&tid=0&lid=0',
+ 'positionName': 'SNG04-看点运营leader（深圳）',
+ 'positionType': '产品/项目类',
+ 'publishTime': '2018-01-09',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3870>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35983&keywords=&tid=0&lid=0',
+ 'positionName': 'SNG17-QQ运动高级产品运营经理（深圳）',
+ 'positionType': '产品/项目类',
+ 'publishTime': '2018-01-12',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3870>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35977&keywords=&tid=0&lid=0',
+ 'positionName': 'TEG05-高级数据挖掘工程师（深圳）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-01-12',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3870>
+{'peopleNum': '2',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35975&keywords=&tid=0&lid=0',
+ 'positionName': 'SNG02-腾讯云能源行业方案架构师（北京/上海/深圳）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-01-12',
+ 'workLocation': '上海'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3870>
+{'peopleNum': '2',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35973&keywords=&tid=0&lid=0',
+ 'positionName': 'SNG02-腾讯云能源行业方案架构师（北京/上海/深圳）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-01-12',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3870>
+{'peopleNum': '2',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35974&keywords=&tid=0&lid=0',
+ 'positionName': 'SNG02-腾讯云能源行业方案架构师（北京/上海/深圳）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-01-12',
+ 'workLocation': '北京'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3870>
+{'peopleNum': '2',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35972&keywords=&tid=0&lid=0',
+ 'positionName': 'SNG02-腾讯云行业交付架构师（北京/上海/深圳/成都）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-01-12',
+ 'workLocation': '北京'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3870>
+{'peopleNum': '2',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35971&keywords=&tid=0&lid=0',
+ 'positionName': 'SNG02-腾讯云行业交付架构师（北京/上海/深圳/成都）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-01-12',
+ 'workLocation': '成都'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3870>
+{'peopleNum': '2',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35970&keywords=&tid=0&lid=0',
+ 'positionName': 'SNG02-腾讯云行业交付架构师（北京/上海/深圳/成都）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-01-12',
+ 'workLocation': '上海'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3870>
+{'peopleNum': '2',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35969&keywords=&tid=0&lid=0',
+ 'positionName': 'SNG02-腾讯云行业交付架构师（北京/上海/深圳/成都）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-01-12',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3870>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35944&keywords=&tid=0&lid=0',
+ 'positionName': '21309-在线教育高级产品经理（深圳）',
+ 'positionType': '产品/项目类',
+ 'publishTime': '2018-01-11',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3890>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35875&keywords=&tid=0&lid=0',
+ 'positionName': '15569-QQ飞车手游高级3D场景设计师',
+ 'positionType': '设计类',
+ 'publishTime': '2018-01-10',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3890>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35873&keywords=&tid=0&lid=0',
+ 'positionName': '15569-QQ飞车高级3D动画特效师',
+ 'positionType': '设计类',
+ 'publishTime': '2018-01-10',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3890>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35879&keywords=&tid=0&lid=0',
+ 'positionName': 'HY6-产品运营经理（深圳）',
+ 'positionType': '产品/项目类',
+ 'publishTime': '2018-01-10',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3890>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35869&keywords=&tid=0&lid=0',
+ 'positionName': '15569-QQ飞车手游高级玩法策划',
+ 'positionType': '产品/项目类',
+ 'publishTime': '2018-01-10',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3890>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35861&keywords=&tid=0&lid=0',
+ 'positionName': '21309-企鹅辅导高级教研经理（深圳）',
+ 'positionType': '产品/项目类',
+ 'publishTime': '2018-01-10',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3860>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=36005&keywords=&tid=0&lid=0',
+ 'positionName': 'OMG153-投资管理经理',
+ 'positionType': '市场类',
+ 'publishTime': '2018-01-15',
+ 'workLocation': '北京'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3860>
+{'peopleNum': '3',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35992&keywords=&tid=0&lid=0',
+ 'positionName': '20765-政务解决方案经理（北京/雄安）',
+ 'positionType': '职能类',
+ 'publishTime': '2018-01-15',
+ 'workLocation': '北京'}
+2018-04-03 23:49:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=3880>
+{'peopleNum': '1',
+ 'positionLink': 'https://hr.tencent.com/position_detail.php?id=35897&keywords=&tid=0&lid=0',
+ 'positionName': '21309-后台开发工程师（深圳）',
+ 'positionType': '技术类',
+ 'publishTime': '2018-01-11',
+ 'workLocation': '深圳'}
+2018-04-03 23:49:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=130#a> (referer: https://hr.tencent.com/position.php?&start=100)
